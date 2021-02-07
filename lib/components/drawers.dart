@@ -19,7 +19,7 @@ class RightDrawer extends StatelessWidget {
                   children: [
                     Text(
                       'İngilizce Kelime Ezberleme Modülü',
-                      style: TextStyle(fontSize: 32),
+                      style: TextStyle(fontSize: 32,color: kPurpleColor),
                     ),
                   ],
                 ),
@@ -38,18 +38,26 @@ class RightDrawer extends StatelessWidget {
           },
           separatorBuilder: (context, index) {
             if (index == 0) {
-              return FlatButton(onPressed: (){
- Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => IngilizcePage()),
-              );
-              }, child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Text('Yabancı Dil Eğitimi',style: kMainPageButtonTextStyle.copyWith(fontSize: 20),),
-                  Icon(Icons.arrow_forward_sharp,color: kGreenTextColor,)
-                ],
-              ));
+              return FlatButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => IngilizcePage()),
+                    );
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text(
+                        'Yabancı Dil Eğitimi',
+                        style: kMainPageButtonTextStyle.copyWith(fontSize: 20),
+                      ),
+                      Icon(
+                        Icons.arrow_forward_sharp,
+                        color: kGreenTextColor,
+                      )
+                    ],
+                  ));
             } else {
               return Divider();
             }
@@ -71,7 +79,7 @@ class LeftDrawer extends StatelessWidget {
             DrawerHeader(
               child: Text(
                 'Çocuklarınıza Her Gün Söylemeniz Gereken Cümleler',
-                style: TextStyle(fontSize: 30,color: kPurpleColor),
+                style: TextStyle(fontSize: 30, color: kPurpleColor),
               ),
             ),
             ListTile(

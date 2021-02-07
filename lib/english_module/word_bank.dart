@@ -51,7 +51,7 @@ class WordBank {
     Words(
       wordEnglish:
           'extra', //Bir tane ekstra kelime koymam lazım sona bu listedeki son kelime enddrawerda gösterilmiyor.
-      wordTurkish: 'extra', //i=0da drawerheader gösterildiği için göstermiyor.
+      wordTurkish: 'extra', //i=0da drawerheader gösterildiği için göstermiyor. (itemCount: wordBank.wordDatasList.length) builderim listemdeki eleman sayısı kadar build etcek. Ama ben bir elemanı drawerheader için harcadığımdan dolayı extra bir eleman koymak zorundayım(ben çözümü böyle buldum en azından :).
     ),
   ];
 
