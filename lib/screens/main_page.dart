@@ -28,13 +28,16 @@ class MainPage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => EgitimPage()),
               );
             },
-            child: Text(
-              'EĞİTİM',
-              style: kMainPageButtonTextStyle
-            ),
+            child: Text('EĞİTİM', style: kMainPageButtonTextStyle),
           ),
-          SizedBox(
-            height: 7,
+          Container(
+            height: 12,
+            width: 400,
+            color: kPurpleColor,
+            child: Text(
+              '',
+              style: TextStyle(fontSize: 5),
+            ),
           ),
           FlatButton(
             onPressed: () {
@@ -43,13 +46,16 @@ class MainPage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => OyunlarPage()),
               );
             },
-            child: Text(
-              'OYUNLAR',
-              style: kMainPageButtonTextStyle
-            ),
+            child: Text('OYUNLAR', style: kMainPageButtonTextStyle),
           ),
-          SizedBox(
-            height: 7,
+          Container(
+            height: 12,
+            width: 300,
+            color: kPurpleColor,
+            child: Text(
+              '',
+              style: TextStyle(fontSize: 5),
+            ),
           ),
           FlatButton(
             onPressed: () {
@@ -58,13 +64,19 @@ class MainPage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => HakkimizdaPage()),
               );
             },
+            child: Text('HAKKIMIZDA', style: kMainPageButtonTextStyle),
+          ),
+          Container(
+            height: 12,
+            width: 200,
+            color: kPurpleColor,
             child: Text(
-              'HAKKIMIZDA',
-              style: kMainPageButtonTextStyle
+              '',
+              style: TextStyle(fontSize: 5),
             ),
           ),
           SizedBox(
-            height: 80,
+            height: 70,
           ),
           FlatButton(
             onPressed: () {
