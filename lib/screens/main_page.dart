@@ -17,10 +17,9 @@ class MainPage extends StatelessWidget {
       constraints: BoxConstraints.expand(),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(
-            height: 320,
-          ),
+          SizedBox(height: 30,),
           FlatButton(
             onPressed: () {
               Navigator.push(
@@ -75,24 +74,22 @@ class MainPage extends StatelessWidget {
               style: TextStyle(fontSize: 5),
             ),
           ),
-          SizedBox(
-            height: 70,
-          ),
-          FlatButton(
+           FlatButton(
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => DogaPage()),
               );
             },
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'DOĞA',
-                  style: kMainPageButtonTextStyle,
-                ),
-              ],
+            child: Text('DOĞA', style: kMainPageButtonTextStyle),
+          ),
+          Container(
+            height: 12,
+            width: 100,
+            color: kPurpleColor,
+            child: Text(
+              '',
+              style: TextStyle(fontSize: 5),
             ),
           ),
         ],
